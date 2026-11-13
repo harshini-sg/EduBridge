@@ -95,13 +95,4 @@ public class Student {
             System.out.println("Error: " + e.getMessage());
         }
     }
-
-    /*
-     * CHALLENGE
-     * - static suits the count because the count belongs to the CLASS, not to any one
-     *   student. One shared copy is updated by every constructor call.
-     * - MAX_MARKS can be final because the maximum permitted marks is a fixed rule that
-     *   must never change while the program runs; final (with static) makes it a
-     *   true constant and prevents accidental modification.
-     */
 }
