@@ -28,14 +28,4 @@ public class Manager extends Employee {
         System.out.println("----------------");
         m.display();
     }
-
-    /*
-     * PREDICTED ORDER when a Manager is created:
-     *   Person constructor
-     *   Employee constructor
-     *   Manager constructor
-     * Reason: Manager() calls super(...) first -> Employee() calls super(...) first ->
-     * Person() runs its body first. Bodies then complete from the top of the hierarchy
-     * down to the child.
-     */
 }
