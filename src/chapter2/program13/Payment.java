@@ -22,20 +22,4 @@ public class Payment {
         System.out.println("Card, 1000, 10% off : " + p1.calculateAmount(1000, 10));
         System.out.println("UPI,  1000, 10% off : " + p2.calculateAmount(1000, 10));
     }
-
-    /*
-     * COMPILE TIME vs RUN TIME
-     * - Compile time: for p1.calculateAmount(1000) the compiler checks the reference type
-     *   (Payment) and picks the SIGNATURE calculateAmount(double). For (1000, 10) it picks
-     *   calculateAmount(double, double). This is overloading resolution.
-     * - Run time: the JVM looks at the real object (CardPayment / UPIPayment) and runs
-     *   that class's overridden calculateAmount(double). This is overriding resolution.
-     *
-     * CHALLENGE
-     * - Can a private method be overridden? NO. A private method is not inherited, so a
-     *   subclass method with the same signature is a completely new method (and is
-     *   not called polymorphically).
-     * - Can a final method be overridden? NO. final prevents overriding; a subclass that
-     *   tries gives a compile-time error.
-     */
 }
