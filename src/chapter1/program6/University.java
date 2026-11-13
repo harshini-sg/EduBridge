@@ -53,14 +53,4 @@ public class University {
         dept.display();
         fac.display();
     }
-
-    /*
-     * CHALLENGE
-     * A non-static inner class holds a hidden reference to its enclosing instance
-     * (University.this) and may use its fields (like name), so an outer object must
-     * exist first: uni.new Faculty(...).
-     * A static nested class is just a class placed inside another for grouping; it has
-     * no hidden reference to an outer instance, so it is created independently:
-     * new University.Department(...).
-     */
 }
