@@ -23,15 +23,4 @@ public class BankTest {
         // ref = a2;   // COMPILE ERROR: cannot assign a value to final variable 'ref'
         ref.deposit(100);   // allowed: the OBJECT can still change, only the reference is fixed
     }
-
-    /*
-     * CHALLENGE ANSWERS
-     * 1. Accessing balance directly gives a compile-time error (private access).
-     * 2. private protects the balance because it can only change through deposit()
-     *    and withdraw(), which validate every change (encapsulation).
-     * 3. static is appropriate because the number of accounts belongs to the class,
-     *    not to any single account.
-     * 4. No. A final reference cannot be re-assigned to a different object, but the
-     *    state of the object it points to can still be modified.
-     */
 }
