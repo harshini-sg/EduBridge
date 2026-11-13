@@ -64,22 +64,4 @@ public class Person {
         people[0].displayDetails("Overloaded method demo");
         System.out.println("\nTotal people created: " + Person.getPersonCount());
     }
-
-    /*
-     * CLASS HIERARCHY
-     *
-     *                 Person
-     *       (name, age, static count, final INSTITUTION,
-     *        nested class Department, displayDetails() + overload)
-     *         /          |             \
-     *    Student      Faculty     Administrator
-     *
-     * CONCEPTS DEMONSTRATED
-     * - Person        : encapsulation (private fields + getters), static counter,
-     *                   final constant, static nested class, method overloading.
-     * - Student       : inheritance, super(), method overriding, uses nested Department.
-     * - Faculty       : inheritance, super(), overriding, uses nested Department.
-     * - Administrator : inheritance, super(), overriding.
-     * - main()        : Person[] array holding subclass objects -> run-time polymorphism.
-     */
 }
