@@ -19,16 +19,4 @@ public class Car extends Vehicle {
         Car car = new Car("Tata Motors", "Nexon");
         car.display();
     }
-
-    /*
-     * PREDICTED OUTPUT:
-     *   Vehicle brand: Tata Motors
-     *   Car brand: Nexon
-     *   this.brand = Nexon, super.brand = Tata Motors
-     *
-     * CHALLENGE
-     * brand       -> the field declared in Car (the child's own copy; it hides the parent's).
-     * super.brand -> the field inherited from Vehicle, accessed explicitly.
-     * Both exist in the object at the same time and hold different values.
-     */
 }
